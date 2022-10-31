@@ -1,0 +1,38 @@
+.bg-hero {
+  background: rgba(23, 62, 84, .5) url(https://images.unsplash.com/photo-1464701116432-f476204d6c45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+
+.bg-blue {
+  background-color: rgba(0, 174, 255, 0.466);
+}
+
+.btn-reset {
+  width: 199px;
+  height: 68px;
+  left: 1210px;
+  top: 26px;
+}
+
+.bg-scoreBoard {
+  width: 80%;
+  height: 559px;
+  background-color: rgba(12, 118, 189, 0.466);
+}
+
+.score-cube {
+  width: 295px;
+  height: 240px;
+}
+
+.score-size {
+  font-size: 125px;
+}
+
+.home-away {
+  font-size: 50px;
+}

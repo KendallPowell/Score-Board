@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ScoreBoard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-dark">
+
+  <main class="row justify-content-center">
+    <div class="col-10 bg-hero">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-3 offset-md-8">
+          <button class="btn-reset text-light bg-danger rounded-pill my-3 p-1" onclick="resetScore()">Reset</button>
+        </div>
+        <div class="col-12 text-center bg-scoreBoard">
+          <div class="row justify-content-center ">
+            <div class="col-12">
+              <div class="row align-items-center justify-content-evenly my-2 p-2">
+                <div class="col-5 text-center">
+                  <p class="fw-bold text-white home-away">Home</p>
+                </div>
+                <div class="col-5 text-center">
+                  <p class="fw-bold text-white home-away">Away</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row justify-content-evenly my-2">
+                <div class="col-4 score-cube card d-box align-items-center justify-content-center  bg-blue">
+                  <p id="home" class="fw-bold text-white score-size">00</p>
+                </div>
+                <div class="col-4 score-cube card d-box align-items-center justify-content-center  bg-blue">
+                  <p id="away" class="fw-bold text-white score-size">00</p>
+                </div>
+              </div>
+            </div>
+            <div class="div col-12">
+              <div class="row justify-content-evenly my-2">
+                <div class="col-3 text-white btn rounded-pill bg-blue" onclick="home(1)">HOME +1</div>
+                <div class="col-3 text-white btn rounded-pill bg-blue" onclick="away(1)">AWAY +1</div>
+              </div>
+            </div>
+            <div class="div col-12">
+              <div class="row justify-content-evenly my-2">
+                <div class="col-3 text-white btn rounded-pill bg-blue" onclick="home(3)">HOME +3</div>
+                <div class="col-3 text-white btn rounded-pill bg-blue" onclick="away(3)">AWAY +3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
